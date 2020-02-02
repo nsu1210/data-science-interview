@@ -1,2 +1,2 @@
-# data-science-challenge
-Data Science challenge collections 
+# data-science-interview
+Data Science interview collections 
