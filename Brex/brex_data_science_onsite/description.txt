@@ -1,0 +1,17 @@
+We have attached a sample dataset (only 10 rows in each) that simulates Brex transaction data. There are two tables for you to work with.
+
+Chargebacks (chargebacks_table_analytics_challenge_sample.csv):
+A list of all transactions that have been chargedback. This means the customer flagged these transactions for fraud and we gave the customer their money back.
+chargeback_id is the primary key in this table and transaction_id is the foreign key.
+
+Transactions (transactions_table_analytics_challenge_sample.csv):
+
+A list of all transactions what were attempted on Brex cards. All fraudulent transactions would be included in this data set.
+transaction _id is the primary key in this table.
+
+More details on industry specific data is below:
+a. MID: merchant_id; this is a unique ID that references a specific merchant
+b. MCC: merchant category code; this is a code that references a category of merchants. For example, restaurants may have one MCC while financial services may have a different MCC.
+c. card_presence: This tells you if the customer was physically present at the time of their transaction or not.
+d. Pan_entry_mode: This tells you how the transaction was processed (i.e. chip, magstripe, ecommerce, etc.)
+e. Fraud_Score: this refers to how risky a transaction may be. The higher the score, the more likely it is fraudulent.
