@@ -1,7 +1,46 @@
-# data-science-interview
-Data Science interview collections 
+# Data Science Cheat Sheet
 
-## Python Cheat Sheet for Data Manipulation 
+## MySQL Cheat Sheet
+
+https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-mysql-A4
+
+- Alias, every derived table must have its own alias. `SELECT ... FROM (subquery) [AS] x`. NOTE: don't use alias in
+ `WHERE` clause.
+- `GROUP BY ... HAVING aggregate_func`, NOTE `WHERE` clause is before `GROUP BY`.
+- `WHERE x = (SELECT MAX(...) FROM ...)`, NOTE: `WHERE x = MAX(...)` is wrong, aggregate function can't show in where
+ clause.
+- `WHERE column = value`, `WHERE column in (subquery)`, `WHERE (column1, column2) in (subquery)`.
+- `LIMIT m, n` = `LIMIT n OFFSET m`, skip top m rows then top n rows.
+- `COUNT(...)` & `COUNT(DISTINCT ...)`, conditional count `COUNT(IF(condition, 1, NULL))` or `SUM(condition[x1 = x2])`.
+- Round, `ROUND(..., decimals)`.
+- Condition Judgement, `CASE WHEN ... THEN ... ELSE ... END`, `IF(..., value if True, value if False)`, `IFNULL(value
+ not null, value is null)`.
+- Update, `UPDATE table SET column = value [WHERE]`.
+- Delete, `DELETE FROM table [WHERE clause]`.
+- Union, combine records from multiple columns into one. `UNION` = `UNION DISTINCT` -> remove duplicates, `UNION ALL
+` -> keep duplicates.
+- Date, `DATE('2020-01-01')` is a date type. 
+- `DATE_ADD(date, INTERVAL number type[DAY, WEEK, MONTH, YEAR])`, `DATE_SUB(date, INTERVAL number type[DAY, WEEK
+, MONTH, YEAR])`.
+- `DATEDIFF(date1, date2) = date1 - date2`.
+- Variable, `SELECT @variable := <some change> FROM table1, (SELECT @variable := original value) AS X`. NOTICE SPACE.
+- `Rank() OVER(PARTITION BY ... ORDER BY ...)`. `ROW_NUMBER()` makes ordinal rank without tie. `DENSE_RANK()` doesn't
+ take gap for tie.
+- Window Function, `Function() OVER(PARTITION BY ... ORDER BY ... ROWS BETWEEN <frame_start> AND <frame_end>)`.
+    1. `frame_start`: 
+        1. `UNBOUNDED PRECEDING`: frame starts at the first row of the partition.
+        2. `N PRECEDING`: a physical N of rows before the first current row. N can be a literal number or an expression that evaluates to a number.
+        3. `CURRENT ROW`: the row of the current calculation.
+    2. `frame_end`
+        1. `frame_start`: as mentioned previously.
+        2. `UNBOUNDED FOLLOWING`: the frame ends at the final row in the partition.
+        3. `N FOLLOWING`: a physical N of rows after the current row.
+![alt text](https://sp.mysqltutorial.org/wp-content/uploads/2018/09/mysql-window-functions-frame-clause-bound.png)
+
+
+
+        
+## Python Pandas Cheat Sheet
 
 https://pandas.pydata.org/pandas-docs/stable/getting_started/comparison/comparison_with_sql.html
 
