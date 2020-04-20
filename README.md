@@ -19,7 +19,8 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
 - Delete, `DELETE FROM table [WHERE clause]`.
 - Union, combine records from multiple columns into one. `UNION` = `UNION DISTINCT` -> remove duplicates, `UNION ALL
 ` -> keep duplicates.
-- Date, `DATE('2020-01-01')` is a date type. 
+- Date, `DATE('2020-01-01')` is a date type. Query date in one year or one month, `YEAR(date) = 2020` or `MONTH(date
+) = 4`.
 - `DATE_ADD(date, INTERVAL number type[DAY, WEEK, MONTH, YEAR])`, `DATE_SUB(date, INTERVAL number type[DAY, WEEK
 , MONTH, YEAR])`.
 - `DATEDIFF(date1, date2) = date1 - date2`.
