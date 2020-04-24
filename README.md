@@ -11,7 +11,8 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
  clause.
 - `WHERE column = value`, `WHERE column in (subquery)`, `WHERE (column1, column2) in (subquery)`.
 - `LIMIT m, n` = `LIMIT n OFFSET m`, skip top m rows then top n rows.
-- `COUNT(...)` & `COUNT(DISTINCT ...)`, conditional count `COUNT(IF(condition, 1, NULL))` or `SUM(condition[x1 = x2])`.
+- `COUNT(...)` & `COUNT(DISTINCT ...)`, conditional count `COUNT(IF(condition, 1, NULL))` or `SUM(condition[x1 = x2
+])`, conditional ratio `AVG(condition)`.
 - Round, `ROUND(..., decimals)`.
 - Condition Judgement, `CASE WHEN ... THEN ... ELSE ... END`, `IF(..., value if True, value if False)`, `IFNULL(value
  not null, value is null)`.
@@ -20,7 +21,7 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
 - Union, combine records from multiple columns into one. `UNION` = `UNION DISTINCT` -> remove duplicates, `UNION ALL
 ` -> keep duplicates.
 - Date, `DATE('2020-01-01')` is a date type. Query date in one year or one month, `YEAR(date) = 2020` or `MONTH(date
-) = 4`.
+) = 4`. Change format of the date `DATE_FORMAT(date, '%m-%d-%Y')` .
 - `DATE_ADD(date, INTERVAL number type[DAY, WEEK, MONTH, YEAR])`, `DATE_SUB(date, INTERVAL number type[DAY, WEEK
 , MONTH, YEAR])`.
 - `DATEDIFF(date1, date2) = date1 - date2`.
