@@ -4,6 +4,7 @@
 
 https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-mysql-A4
 
+### Basic
 - Alias, every derived table must have its own alias. `SELECT ... FROM (subquery) [AS] x`. NOTE: don't use alias in
  `WHERE` clause.
 - `GROUP BY ... HAVING aggregate_func`, NOTE `WHERE` clause is before `GROUP BY`.
@@ -21,11 +22,16 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
  all records of table, both can't revise. `DELETE` delete specific records, can revise.
 - Union, combine records from multiple columns into one. `UNION` = `UNION DISTINCT` -> remove duplicates, `UNION ALL
 ` -> keep duplicates.
+
+### Date
 - Date, `DATE('2020-01-01')` is a date type. Query date in one year or one month, `YEAR(date) = 2020` or `MONTH(date
 ) = 4`. Change format of the date `DATE_FORMAT(date, '%m-%d-%Y')` .
 - `DATE_ADD(date, INTERVAL number type[DAY, WEEK, MONTH, YEAR])`, `DATE_SUB(date, INTERVAL number type[DAY, WEEK
 , MONTH, YEAR])`.
 - `DATEDIFF(date1, date2) = date1 - date2`.
+- `CURRENT_DATE()` = `CURDATE()` get current date. `NOW()` get current datetime.
+
+### Advanced
 - Variable, `SELECT @variable := <some change> FROM table1, (SELECT @variable := original value) AS X`. NOTICE SPACE.
 - `Rank() OVER(PARTITION BY ... ORDER BY ...)`. `ROW_NUMBER()` makes ordinal rank without tie. `DENSE_RANK()` doesn't
  take gap for tie.
