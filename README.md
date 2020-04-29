@@ -17,7 +17,8 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
 - Condition Judgement, `CASE WHEN ... THEN ... ELSE ... END`, `IF(..., value if True, value if False)`, `IFNULL(value
  not null, value is null)`.
 - Update, `UPDATE table SET column = value [WHERE]`.
-- Delete, `DELETE FROM table [WHERE clause]`.
+- Delete, `DELETE FROM table [WHERE clause]`. `DROP` > `TRUNCATE` > `DELETE`. `DROP` entire table, `TRUNCATE` delete
+ all records of table, both can't revise. `DELETE` delete specific records, can revise.
 - Union, combine records from multiple columns into one. `UNION` = `UNION DISTINCT` -> remove duplicates, `UNION ALL
 ` -> keep duplicates.
 - Date, `DATE('2020-01-01')` is a date type. Query date in one year or one month, `YEAR(date) = 2020` or `MONTH(date
