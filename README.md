@@ -35,6 +35,7 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
 - Variable, `SELECT @variable := <some change> FROM table1, (SELECT @variable := original value) AS X`. NOTICE SPACE.
 - `Rank() OVER(PARTITION BY ... ORDER BY ...)`. `ROW_NUMBER()` makes ordinal rank without tie. `DENSE_RANK()` doesn't
  take gap for tie.
+- Some useful window function. `FIRST_VALUE()` get first value, `LEAD()` get next value, `LAG()` get previous value.
 - Window Function, `Function() OVER(PARTITION BY ... ORDER BY ... ROWS [BETWEEN] <frame_start> [AND] <frame_end>)`.
     1. `frame_start`: 
         1. `UNBOUNDED PRECEDING`: frame starts at the first row of the partition.
