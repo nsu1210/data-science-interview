@@ -15,11 +15,12 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
 - `COUNT(...)` & `COUNT(DISTINCT ...)`, conditional count `COUNT(IF(condition, 1, NULL))` or `SUM(condition[x1 = x2
 ])`, conditional ratio `AVG(condition)`.
 - Round, `ROUND(..., decimals)`.
+- String, `SUBSTRING(str, num1, num2)`, extract a substring from str (start at position num1, length num2).
 - Condition Judgement, `CASE WHEN <condition> THEN ... ELSE ... END`, `CASE <value> WHEN <value> THEN ... END`, note
  there're two ways expressions. `IF(..., value if True, value if False)`, `IFNULL(value not null, value is null)`.
 - Update, `UPDATE table SET column = value [WHERE]`.
-- Delete, `DELETE FROM table [WHERE clause]`. `DROP` > `TRUNCATE` > `DELETE`. `DROP TABLE` drop entire table, `TRUNCATE
- TABLE` delete all records of table, both can't revise. `DELETE` delete specific records, can revise.
+- Delete, `DELETE FROM table [WHERE clause]`, [an classic example](https://leetcode.com/problems/delete-duplicate-emails/).  
+`DROP` > `TRUNCATE` > `DELETE`. `DROP TABLE` drop entire table, `TRUNCATE TABLE` delete all records of table, both can't revise. `DELETE` delete specific records, can revise.
 - Union, combine records from multiple columns into one. `UNION` = `UNION DISTINCT` -> remove duplicates, `UNION ALL
 ` -> keep duplicates.
 
