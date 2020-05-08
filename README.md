@@ -17,10 +17,13 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
 - Round, `ROUND(..., decimals)`.
 - String, `SUBSTRING(str, num1, num2)`, extract a substring from str (start at position num1, length num2).
 - Condition Judgement, `CASE WHEN <condition> THEN ... ELSE ... END`, `CASE <value> WHEN <value> THEN ... END`, note
- there're two ways expressions. `IF(..., value if True, value if False)`, `IFNULL(value not null, value is null)`.
+ there're two ways expressions. Some other condition judgement method`IF(..., value if True, value if False)`, `IFNULL
+ (value if not null, value if null)`. `COALESCE(value1, value2)` has same function with `IFNULL`, `COALESCE` is to
+  choose the first not null value in list, so in application if `value1` is null then `value2` replaces it.
 - Update, `UPDATE table SET column = value [WHERE]`.
 - Delete, `DELETE FROM table [WHERE clause]`, [an classic example](https://leetcode.com/problems/delete-duplicate-emails/).  
-`DROP` > `TRUNCATE` > `DELETE`. `DROP TABLE` drop entire table, `TRUNCATE TABLE` delete all records of table, both can't revise. `DELETE` delete specific records, can revise.
+`DROP` > `TRUNCATE` > `DELETE`. `DROP TABLE` drop entire table, `TRUNCATE TABLE` delete all records of table, both
+ can't revise. `DELETE` delete specific records, can revise.
 - Union, combine records from multiple columns into one. `UNION` = `UNION DISTINCT` -> remove duplicates, `UNION ALL
 ` -> keep duplicates.
 
@@ -40,7 +43,8 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
 - Window Function, `Function() OVER(PARTITION BY ... ORDER BY ... ROWS [BETWEEN] <frame_start> [AND] <frame_end>)`.
     1. `frame_start`: 
         1. `UNBOUNDED PRECEDING`: frame starts at the first row of the partition.
-        2. `N PRECEDING`: a physical N of rows before the first current row. N can be a literal number or an expression that evaluates to a number.
+        2. `N PRECEDING`: a physical N of rows before the first current row. N can be a literal number or an
+         expression that evaluates to a number.
         3. `CURRENT ROW`: the row of the current calculation.
     2. `frame_end`
         1. `frame_start`: as mentioned previously.
