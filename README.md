@@ -15,6 +15,8 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
 - `COUNT(...)` & `COUNT(DISTINCT ...)`, conditional count `COUNT(IF(condition, 1, NULL))` or `SUM(condition[x1 = x2
 ])`, conditional ratio `AVG(condition)`.
 - Round, `ROUND(..., decimals)`.
+- Union, combine records from multiple columns into one. `UNION` = `UNION DISTINCT` -> remove duplicates, `UNION ALL
+` -> keep duplicates.
 - String, `SUBSTRING(str, num1, num2)`, extract a substring from str (start at position num1, length num2).
 - Condition Judgement, `CASE WHEN <condition> THEN ... ELSE ... END`, `CASE <value> WHEN <value> THEN ... END`, note
  there're two ways expressions. Some other condition judgement method`IF(..., value if True, value if False)`, `IFNULL
@@ -24,8 +26,8 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
 - Delete, `DELETE FROM table [WHERE clause]`, [an classic example](https://leetcode.com/problems/delete-duplicate-emails/).  
 `DROP` > `TRUNCATE` > `DELETE`. `DROP TABLE` drop entire table, `TRUNCATE TABLE` delete all records of table, both
  can't revise. `DELETE` delete specific records, can revise.
-- Union, combine records from multiple columns into one. `UNION` = `UNION DISTINCT` -> remove duplicates, `UNION ALL
-` -> keep duplicates.
+- Random, `RAND(seed=None)`, returns a random number between [0, 1). Get random int between [0, 10], `SELECT FLOOR
+(RAND() * 11)`.
 
 ### Date
 - Date, `DATE('2020-01-01')` is a date type. Query date in one year or one month, `YEAR(date) = 2020` or `MONTH(date
