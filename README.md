@@ -12,8 +12,8 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
  clause.
 - `WHERE column = value`, `WHERE column in (subquery)`, `WHERE (column1, column2) in (subquery)`.
 - `LIMIT m, n` = `LIMIT n OFFSET m`, skip top m rows then top n rows.
-- `COUNT(...)` & `COUNT(DISTINCT ...)`, conditional count `COUNT(IF(condition, 1, NULL))` or `SUM(condition[x1 = x2
-])`, conditional ratio `AVG(condition)`.
+- `COUNT(...)` & `COUNT(DISTINCT ...)`, can use count distinct for multiple columns. Conditional count `COUNT(IF
+(condition, 1, NULL))` or `SUM(condition[x1 = x2])`, conditional ratio `AVG(condition)`.
 - Round, `ROUND(..., decimals)`.
 - Union, combine records from multiple columns into one. `UNION` = `UNION DISTINCT` -> remove duplicates, `UNION ALL
 ` -> keep duplicates.
