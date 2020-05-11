@@ -73,10 +73,10 @@ DELIMITER ;
 
 ## Python Algorithms Cheat Sheet
 
-- ### Python Standard Library
-    - `collections`
-        - `Counter`. dict subclass for counting hashable objects. 
-            - `most_common(n: int = None)`, get TOP N frequent `(elements, count)` list of tuple.
+### Python Standard Library
+- `collections`
+    - `Counter`. dict subclass for counting hashable objects. 
+        - `most_common(n: int = None)`, get TOP N frequent `(elements, count)` list of tuple.
 
         
 ## Python Pandas Cheat Sheet
