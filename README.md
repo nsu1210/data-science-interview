@@ -71,7 +71,12 @@ END $$
 DELIMITER ;
 ```
 
+## Python Algorithms Cheat Sheet
 
+- ### Python Standard Library
+    - `collections`
+        - `Counter`. dict subclass for counting hashable objects. 
+            - `most_commen(n: int)`, get TOP N frequent `(elements, count)` list of tuple.
 
         
 ## Python Pandas Cheat Sheet
