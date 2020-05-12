@@ -78,7 +78,16 @@ DELIMITER ;
     - `Counter`. dict subclass for counting hashable objects. 
         - `most_common(n: int = None)`, get TOP N frequent `(elements, count)` list of tuple.
 
+
+### Important Conception
+- `assignment` & `shallow copy` & `deep copy`. [Link](https://songlee24.github.io/2014/08/15/python-FAQ-02/)
+
+
         
+
+
+
+
 ## Python Pandas Cheat Sheet
 
 https://pandas.pydata.org/pandas-docs/stable/getting_started/comparison/comparison_with_sql.html
