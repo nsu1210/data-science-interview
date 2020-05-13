@@ -73,7 +73,7 @@ DELIMITER ;
 
 ## Python Algorithms Cheat Sheet
 
-### Python Standard Library
+### Python Data Structure
 - `collections`
     - `Counter`. Dict subclass for counting hashable objects. 
         - `most_common(n: int = None)`, get TOP N frequent `(elements, count)` list of tuple.
@@ -88,6 +88,21 @@ DELIMITER ;
         - `rotate(n=1)`. Rotate the deque n steps to the right. If n is negative, rotate to the left, rotating one
          step to the right is equivalent to `d.appendleft(d.pop())`, and rotating one step to the left is equivalent to
           `d.append(d.popleft())`.
+- `heapq`. `Heap` is a binary tree like data structure, with all parent nodes value less(more) than or equal to its
+ own children. `Heapsort` is `O(nlogn)` sorting algorithm. In python `heaqp`, default is `min-heap`, which the
+  smallest is always the root, `head[0]`.
+    - `heapify(x)`. Transform list x into a heap (still a list type), in-place, in linear time.
+    - `heappush(heap, item)`. Push the value item onto the heap, maintaining the heap invariant.
+    - `heappop(heap)`. Pop and return the smallest item from the heap, maintaining the heap invariant.To access the
+     smallest item without popping it, use `heap[0]`.
+    - `heappushpop(heap, item)`. Push item on the heap, then pop and return the smallest item from the heap.
+    - `heapreplace(heap, item)`. Pop and return the smallest item from the heap, then push the new item.
+    - `merge(*iterables, key=None, reverse=False)`. Merge multiple sorted inputs into a single sorted output.
+    - `nlargest(n, iterable, key=None)`. Return a list with the n largest elements from the `iterable`. Equivalent to
+     `sorted(iterable, key=key, reverse=True)[:n]`.
+    - `nsmallest(n, iterable, key=None)`. Return a list with the n smallest elements from the `iterable`.Equivalent to
+     `sorted(iterable, key=key)[:n]`.
+
 - `copy`. Compare `assignment` & `shallow copy` & `deep copy`. [Link](https://songlee24.github.io/2014/08/15/python-FAQ-02/)
 
 ### Algorithm Summary
