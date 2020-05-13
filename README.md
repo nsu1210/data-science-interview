@@ -78,19 +78,13 @@ DELIMITER ;
     - `Counter`. Dict subclass for counting hashable objects. 
         - `most_common(n: int = None)`, get TOP N frequent `(elements, count)` list of tuple.
     - `defaultdict`. Dict subclass that calls a factory function to supply missing values.
-
-
-
-### Important Conception
-- `assignment` & `shallow copy` & `deep copy`. [Link](https://songlee24.github.io/2014/08/15/python-FAQ-02/)
-
+- `copy`. Compare `assignment` & `shallow copy` & `deep copy`. [Link](https://songlee24.github.io/2014/08/15/python-FAQ-02/)
 
 ### Algorithm Summary
 - `DFS` & `BFS`
     - `DFS` can reach the target, but might not take the optimal steps/route. Thus `BFS` is a good choice for optimal
      search problem. Example: [127. Word Ladder](https://leetcode.com/problems/word-ladder/)
 
-        
 
 
 
