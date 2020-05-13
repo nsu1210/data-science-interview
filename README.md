@@ -77,11 +77,16 @@ DELIMITER ;
 - `collections`
     - `Counter`. dict subclass for counting hashable objects. 
         - `most_common(n: int = None)`, get TOP N frequent `(elements, count)` list of tuple.
-
+ 
 
 ### Important Conception
 - `assignment` & `shallow copy` & `deep copy`. [Link](https://songlee24.github.io/2014/08/15/python-FAQ-02/)
 
+
+### Algorithm Summary
+- `DFS` & `BFS`
+    - `DFS` can reach the target, but might not take the optimal steps/route. Thus `BFS` is a good choice for optimal
+     search problem.
 
         
 
