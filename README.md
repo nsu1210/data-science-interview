@@ -78,6 +78,16 @@ DELIMITER ;
     - `Counter`. Dict subclass for counting hashable objects. 
         - `most_common(n: int = None)`, get TOP N frequent `(elements, count)` list of tuple.
     - `defaultdict`. Dict subclass that calls a factory function to supply missing values.
+        - `defaultdict(list)[key]` = `dict.setdefault(key, [])`, same for other data type: `int`, `set`.
+    - `deque`. List-like container with fast appends and pops on either end.
+        - `append(x)` & `appendleft(x)`. Append one element to right & left side.
+        - `extend(l)` & `extendleft(l)`. Extend the iterable object (list) to right & left side. Note left one will be
+         reversed.
+        - `pop()` & `popleft()`.  Pop out one element from right & left side.
+        - `count(x)`. Count the number of element x. `reverse()` & `remove(x)` are inplace methods same with `List`.
+        - `rotate(n=1)`. Rotate the deque n steps to the right. If n is negative, rotate to the left, rotating one
+         step to the right is equivalent to `d.appendleft(d.pop())`, and rotating one step to the left is equivalent to
+          `d.append(d.popleft())`.
 - `copy`. Compare `assignment` & `shallow copy` & `deep copy`. [Link](https://songlee24.github.io/2014/08/15/python-FAQ-02/)
 
 ### Algorithm Summary
