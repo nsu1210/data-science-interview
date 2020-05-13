@@ -94,6 +94,10 @@ DELIMITER ;
 - `DFS` & `BFS`
     - `DFS` can reach the target, but might not take the optimal steps/route. Thus `BFS` is a good choice for optimal
      search problem. Example: [127. Word Ladder](https://leetcode.com/problems/word-ladder/)
+    - When searching, it would be better to overwrite the visited value instead of storing. Note `DFS` need to revert
+     the value back. Example: [200. Number of Islands](https://leetcode.com/problems/number-of-islands/), 
+     [79. Word Search](https://leetcode.com/problems/word-search/)
+     
 
 
 
