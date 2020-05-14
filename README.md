@@ -109,10 +109,12 @@ DELIMITER ;
 - `DFS` & `BFS`
     - `DFS` can reach the target, but might not take the optimal steps/route. Thus `BFS` is a good choice for optimal
      search problem. Example: [127. Word Ladder](https://leetcode.com/problems/word-ladder/)
-    - When searching, it would be better to overwrite the visited value instead of storing. Note `DFS` need to revert
-     the value back. Example: [200. Number of Islands](https://leetcode.com/problems/number-of-islands/), 
-     [79. Word Search](https://leetcode.com/problems/word-search/)
-     
+    - **When searching, it would be better to change visit status value instead of storing in set.** Note `DFS` need to
+     revert the value after recursion. Example: [200. Number of Islands](https://leetcode.com/problems/number-of-islands/), 
+     [79. Word Search](https://leetcode.com/problems/word-search/).
+    - `DFS` & `Topological Sort`. Unlike classic `DFS` change one status(visited), in graph problem, `Topological Sort
+    ` has two status(visited & visiting) to detect cycle. Remember to change visiting to visited after recursion. 
+    Example: [207. Course Schedule](https://leetcode.com/problems/course-schedule/).
 
 
 
