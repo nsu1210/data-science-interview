@@ -103,6 +103,18 @@ DELIMITER ;
     - `nsmallest(n, iterable, key=None)`. Return a list with the n smallest elements from the `iterable`.Equivalent to
      `sorted(iterable, key=key)[:n]`.
 
+- `Trie`. `Trie` aka `prefix tree`, is a kind of search tree for strings. For all children of one node share the same
+ prefix, each node represents one letter and usually has 26 children. In Python, `Trie` need to be manually defined. 
+ `Trie` is constructed by `TrieNode`(two attributes `children: Dict` & `end: bool`). 
+ [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+    - `__init__`. Initialize with empty root node.
+    - `insert(String)`. Generate children of parent node recursively, if the letter key not in parent node then create
+     one. In the final node, set `end = True`, meaning it's a completed word.
+    - `search(String)`. Search if the word in the trie.
+    - `word_suggest(String)`. Give out suggestion result when tying in a searching word. 
+    [1268. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/)
+
+
 - `copy`. Compare `assignment` & `shallow copy` & `deep copy`. [Link](https://songlee24.github.io/2014/08/15/python-FAQ-02/)
 
 ### Algorithm Summary
