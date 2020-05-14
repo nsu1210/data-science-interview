@@ -73,7 +73,7 @@ DELIMITER ;
 
 ## Python Algorithms Cheat Sheet
 
-### Data Structure
+### Data Structure & Standard Library
 - `collections`
     - `Counter`. Dict subclass for counting hashable objects. 
         - `most_common(n: int = None)`, get TOP N frequent `(elements, count)` list of tuple.
