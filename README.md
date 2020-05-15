@@ -79,7 +79,7 @@ DELIMITER ;
         - `most_common(n: int = None)`, get TOP N frequent `(elements, count)` list of tuple.
     - `defaultdict`. Dict subclass that calls a factory function to supply missing values.
         - `defaultdict(list)[key]` = `dict.setdefault(key, [])`, same for other data type: `int`, `set`.
-    - `deque`. List-like container with fast appends and pops on either end.
+    - `deque`. List-like container with fast appends and pops on either end. **Tips**: good choice for `BFS`.
         - `append(x)` & `appendleft(x)`. Append one element to right & left side.
         - `extend(l)` & `extendleft(l)`. Extend the iterable object (list) to right & left side. Note left one will be
          reversed.
