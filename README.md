@@ -22,6 +22,7 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
  there're two ways expressions. Some other condition judgement method`IF(..., value if True, value if False)`, `IFNULL
  (value if not null, value if null)`. `COALESCE(value1, value2)` has same function with `IFNULL`, `COALESCE` is to
   choose the first not null value in list, so in application if `value1` is null then `value2` replaces it.
+- Create, `CREATE TABLE table_name (column_name1 column_type1, column_name2, column_type2, PRIMARY KEY (column_name1))`.
 - Update, `UPDATE table SET column = value [WHERE]`.
 - Delete, `DELETE FROM table [WHERE clause]`, [an classic example](https://leetcode.com/problems/delete-duplicate-emails/).  
 `DROP` > `TRUNCATE` > `DELETE`. `DROP TABLE` drop entire table, `TRUNCATE TABLE` delete all records of table, both
