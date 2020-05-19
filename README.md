@@ -28,6 +28,10 @@ https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-m
 - Delete, `DELETE FROM table [WHERE clause]`, [an classic example](https://leetcode.com/problems/delete-duplicate-emails/).  
 `DROP` > `TRUNCATE` > `DELETE`. `DROP TABLE` drop entire table, `TRUNCATE TABLE` delete all records of table, both
  can't revise. `DELETE` delete specific records, can revise.
+- Like, fuzzy query for string. `SELECT * FROM table WHERE column1 LIKE '%THIS`, `%` stands for any 0 or multiple
+ chars, `_` stands for single chars, for other [regular expression](https://www.runoob.com/mysql/mysql-regexp.html).
+- Index, index can boost query while need more space, which will slow down alter process(insert). `INDEX` could be
+ duplicated and null. `Primary Key` will automatically generate `UNIQUE INDEX`(unique and not null). 
 - Random, `RAND(seed=None)`, returns a random number between [0, 1). Get random int between [0, 10], `SELECT FLOOR
 (RAND() * 11)`.
 
