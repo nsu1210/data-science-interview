@@ -131,10 +131,13 @@ DELIMITER ;
     - **When searching, it would be better to change visit status value instead of storing in set.** Note `DFS` need to
      revert the value after recursion. Example: [200. Number of Islands](https://leetcode.com/problems/number-of-islands/), 
      [79. Word Search](https://leetcode.com/problems/word-search/).
-    - `DFS` & `Topological Sort`. Unlike classic `DFS` change one status(visited), in graph problem, `Topological Sort
-    ` has two status(visited & visiting) to detect cycle. Remember to change visiting to visited after recursion. 
-    Example: [207. Course Schedule](https://leetcode.com/problems/course-schedule/).
-
+    - `Graph Problem`
+        - `Topological Sort`. Unlike classic `DFS` change one status(visited), in graph problem, `Topological Sort
+        ` has two status(visited & visiting) to **detect cycle**. Remember to change visiting to visited after recursion. 
+        Example: [207. Course Schedule](https://leetcode.com/problems/course-schedule/).
+        - `Dijkstra's Algorithm`. Use `BFS` like search to solve **weighted graph shortest path** problem, combined with
+         `Heap` to make sure the search starts with minimum cost path. 
+         Example: [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/).
 
 
 
