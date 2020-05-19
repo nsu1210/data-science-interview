@@ -136,7 +136,7 @@ DELIMITER ;
         ` has two status(visited & visiting) to **detect cycle**. Remember to change visiting to visited after recursion. 
         Example: [207. Course Schedule](https://leetcode.com/problems/course-schedule/).
         - `Dijkstra's Algorithm`. Use `BFS` like search to solve **weighted graph shortest path** problem, combined with
-         `Heap` to make sure the search starts with minimum cost path. 
+         `Heap` to make sure the search **starts with minimum cost path** (like greedy algorithm). 
          Example: [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/).
 
 
