@@ -1,8 +1,9 @@
 # Data Science Cheat Sheet
 
-## MySQL Cheat Sheet
+## MySQL Cheat Sheet 
 
-https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-mysql-A4
+Some refer links:
+- [SQLZOO](https://sqlzoo.net/wiki/SQL_Tutorial)
 
 ### Basic
 - Alias, every derived table must have its own alias. `SELECT ... FROM (subquery) [AS] x`. NOTE: don't use alias in
