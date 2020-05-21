@@ -46,6 +46,15 @@ Some refer links:
 - `CURRENT_DATE()` = `CURDATE()` get current date. `NOW()` get current datetime.
 
 ### Advanced
+
+- View & CTE
+    *  View stores the query, it's just like a virtual table. 
+        1. Simplify frequent query operation. 
+        2. For security reason, can show limit data to specific users.
+    * CTE is a temporary result set that exists only within single SQL statement, like subquery.
+        1. CTE doesn't store as an object. 
+        2. CTE can be referred multiple times in the same query and used in recursive calculation.
+
 - Median, there's no function to get Median in MySQL.
 ```
 SELECT AVG(salary) as median 
