@@ -48,10 +48,11 @@ Some refer links:
 ### Advanced
 
 - View & CTE
-    *  View stores the query, it's just like a virtual table. 
+    *  [View](https://www.mysqltutorial.org/mysql-views-tutorial.aspx/) stores the query, it's just like a virtual table. 
         1. Simplify frequent query operation. 
         2. For security reason, can show limit data to specific users.
-    * CTE is a temporary result set that exists only within single SQL statement, like subquery.
+    * [CTE](https://www.mysqltutorial.org/mysql-cte/) is a temporary result set that exists only within single SQL 
+    statement, like subquery.
         1. CTE doesn't store as an object. 
         2. CTE can be referred multiple times in the same query and used in recursive calculation.
 
