@@ -46,6 +46,18 @@ Some refer links:
 - `CURRENT_DATE()` = `CURDATE()` get current date. `NOW()` get current datetime.
 
 ### Advanced
+- Median, there's no function to get Median in MySQL.
+```
+SELECT AVG(dd.val) as median_val
+FROM (
+SELECT d.val, @rownum:=@rownum+1 as `row_number`, @total_rows:=@rownum
+  FROM data d, (SELECT @rownum:=0) r
+  WHERE d.val is NOT NULL
+  -- put some where clause here
+  ORDER BY d.val
+) as dd
+WHERE dd.row_number IN ( FLOOR((@total_rows+1)/2), FLOOR((@total_rows+2)/2) );
+```
 - Variable, `SELECT @variable := <some change> FROM table1, (SELECT @variable := original value) AS X`. NOTICE SPACE.
 - `Rank() OVER(PARTITION BY ... ORDER BY ...)`. `ROW_NUMBER()` makes ordinal rank without tie. `DENSE_RANK()` doesn't
  take gap for tie.
