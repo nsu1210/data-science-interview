@@ -48,10 +48,11 @@ Some refer links:
 ### Advanced
 
 - View & CTE
-    *  [View](https://www.mysqltutorial.org/mysql-views-tutorial.aspx/) stores the query, it's just like a virtual table. 
+    -  [View](https://www.mysqltutorial.org/mysql-views-tutorial.aspx/) stores the query, it's just like a virtual
+     table. 
         1. Simplify frequent query operation. 
         2. For security reason, can show limit data to specific users.
-    * [CTE](https://www.mysqltutorial.org/mysql-cte/) is a temporary result set that exists only within single SQL 
+    - [CTE](https://www.mysqltutorial.org/mysql-cte/) is a temporary result set that exists only within single SQL 
     statement, like subquery.
         1. CTE doesn't store as an object. 
         2. CTE can be referred multiple times in the same query and used in recursive calculation.
@@ -144,7 +145,7 @@ DELIMITER ;
 - `copy`. Compare `assignment` & `shallow copy` & `deep copy`. [Link](https://songlee24.github.io/2014/08/15/python-FAQ-02/)
 
 ### Algorithm Summary
-- `DFS` & `BFS`
+- **DFS & BFS**
     - `DFS` can reach the target, but might not take the optimal steps/route. Thus `BFS` is a good choice for optimal
      search problem. Example: [127. Word Ladder](https://leetcode.com/problems/word-ladder/)
     - **When searching, it would be better to change visit status value instead of storing in set.** Note `DFS` need to
@@ -157,7 +158,10 @@ DELIMITER ;
         - `Dijkstra's Algorithm`. Use `BFS` like search to solve **weighted graph shortest path** problem, combined with
          `Heap` to make sure the search **starts with minimum cost path** (like greedy algorithm). 
          Example: [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/).
-
+- **Sort Algorithm**
+    - Heap Sort, check introduction above.
+    - [Bucket Sort](https://en.wikipedia.org/wiki/Bucket_sort), split value range into buckets, put values into
+     corresponding buckets, recursion in each bucket, finally merge buckets.
 
 
 
