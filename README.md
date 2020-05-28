@@ -162,6 +162,9 @@ DELIMITER ;
     - Heap Sort, check introduction above.
     - [Bucket Sort](https://en.wikipedia.org/wiki/Bucket_sort), split value range into buckets, put values into
      corresponding buckets, recursion in each bucket, finally merge buckets.
+    - [QuickSort](https://en.wikipedia.org/wiki/Quicksort), use **Divide and Conquer** strategy to sort. 
+     First pick a pivot, then place smaller values at left & larger values at right (use two pointer), finally do
+     recursion.
 
 
 
