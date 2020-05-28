@@ -164,7 +164,7 @@ DELIMITER ;
      corresponding buckets, recursion in each bucket, finally merge buckets.
     - [QuickSort](https://en.wikipedia.org/wiki/Quicksort), use **Divide and Conquer** strategy to sort. 
      First pick a pivot, then place smaller values at left & larger values at right (use two pointer), finally do
-     recursion.
+     recursion. Example: [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 
 
