@@ -115,6 +115,7 @@ DELIMITER ;
         - `rotate(n=1)`. Rotate the deque n steps to the right. If n is negative, rotate to the left, rotating one
          step to the right is equivalent to `d.appendleft(d.pop())`, and rotating one step to the left is equivalent to
           `d.append(d.popleft())`.
+          
 - `heapq`. `Heap` is a binary tree like data structure, with all parent nodes value less(more) than or equal to its
  own children. `Heapsort` is `O(nlogn)` sorting algorithm. In python `heaqp`, default is `min-heap`, which the
   smallest is always the root, `head[0]`.
@@ -140,7 +141,19 @@ DELIMITER ;
     - `search(String)`. Search if the word in the trie.
     - `word_suggest(String)`. Give out suggestion result when tying in a searching word. 
     [1268. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/)
+   
+- `random`. Generate pseudo-random numbers.
+    - `random()`. Return random float number in [0.0, 1.0).
+    - `randrange(start, stop, step)`. Return a randomly selected element from `range(start, stop, step)`.
+    - `choice(seq)`. Return a random element from the non-empty sequence.
+    - `sample(population, k)`. Return a `k` length list of unique elements randomly selected from population.
+     Sampling without replacement.
 
+- `bisect`. Support for maintaining a list in sorted order without having to sort the list after each insertion.
+    - `bisect(a, x, lo=0, hi=len(a))`. Return an insertion index partition the sorted list `a` into two parts that
+      `left <= x < right`.
+    - `bisect_left(a, x, lo=0, hi=len(a))`. Similar with above. `left < x <= right`.
+    - `insort(a, x, lo=0, hi=len(a))`. `insort_left(a, x, lo=0, hi=len(a))`. Insert `x` into sorted list `a`.
 
 - `copy`. Compare `assignment` & `shallow copy` & `deep copy`. [Link](https://songlee24.github.io/2014/08/15/python-FAQ-02/)
 
