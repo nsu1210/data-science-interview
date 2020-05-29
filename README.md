@@ -151,7 +151,7 @@ DELIMITER ;
 
 - `bisect`. Support for maintaining a list in sorted order without having to sort the list after each insertion.
     - `bisect(a, x, lo=0, hi=len(a))`. Return an insertion index partition the sorted list `a` into two parts that
-      `left <= x < right`.
+      `left <= x < right`. [981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/)
     - `bisect_left(a, x, lo=0, hi=len(a))`. Similar with above. `left < x <= right`.
     - `insort(a, x, lo=0, hi=len(a))`. `insort_left(a, x, lo=0, hi=len(a))`. Insert `x` into sorted list `a`.
 
