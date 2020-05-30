@@ -204,9 +204,9 @@ DELIMITER ;
 
 ## Python matplotlib Cheat Sheet
 
-[Quick Reference](https://matplotlib.org/3.1.1/tutorials/introductory/sample_plots.html)
-
-[Easy Tutorial](https://www.jianshu.com/p/ca21fc707e05)
+- [Quick Reference](https://matplotlib.org/3.1.1/tutorials/introductory/sample_plots.html)
+- [Quick Check](https://www.jianshu.com/p/ca21fc707e05)
+- [Easy Tutorial](https://realpython.com/python-matplotlib-guide/#why-can-matplotlib-be-confusing)
 
 ### Object Hierarchy
 For each plot, there's a tree-like structure of matplotlib objects.
