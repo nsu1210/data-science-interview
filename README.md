@@ -181,9 +181,8 @@ DELIMITER ;
 
 
 
-## Python Pandas Cheat Sheet
-
-https://pandas.pydata.org/pandas-docs/stable/getting_started/comparison/comparison_with_sql.html
+## Python pandas Cheat Sheet
+[Quick Reference](https://pandas.pydata.org/pandas-docs/stable/getting_started/comparison/comparison_with_sql.html)
 
 - IMPUTATION, `df.fillna(value=0), df.dropna(), df.drop_duplicates()`.
 - NEW COLUMN, i.e. `df.assign(new=df.col1 + df.col2), df.assign(new=lambda x: x.col1 * 2)`.
@@ -201,3 +200,50 @@ https://pandas.pydata.org/pandas-docs/stable/getting_started/comparison/comparis
 - DATE, `date = datetime.now(), date = datetime(2020, 2, 18), date = datetime.strptime('2020-02-18', "%Y-%m-%d")`.
 - DATE DIFF, `(datetime(2020, 2, 18) - datetime(2020, 2, 17)).days == 1, start_date = end_date - timedelta(days=7).`
 - PIVOT, `df.pivot(index='col1', columns='col2', values='col3' | ['col3'. col4])`
+
+
+## Python matplotlib Cheat Sheet
+
+[Quick Reference](https://matplotlib.org/3.1.1/tutorials/introductory/sample_plots.html)
+
+[Easy Tutorial](https://www.jianshu.com/p/ca21fc707e05)
+
+### Object Hierarchy
+For each plot, there's a tree-like structure of matplotlib objects.
+
+- `Figure`. The outermost container for a matplotlib graphic, which can contain multiple `Axes` objects.
+- `Axes`. Actually the individual plot or graph as we think, rather than multiple "axis". 
+- Below the `Axes` are smaller objects such as tick marks, individual lines, legends, text boxes.
+![alt text](https://files.realpython.com/media/fig_map.bc8c7cabd823.png)
+
+### Stateful vs Stateless Approaches
+
+- Stateful(state-based, state-machine): Directly use `plt` function, like `plt.plot()`. Convenient & General.
+- Stateless(object-oriented): Use method of `Axes` object, like `ax.plot()`. Specific & Customized.
+
+Almost all functions from pyplot such as `plt.plot()`, are either referring to an existing current `Figure` and current 
+`Axes`, or creating new of none exists.
+
+Most of the functions from pyplot also exists as methods of the `matplotlib.axes.Axes` class. Calling `plt.plot()` is
+just more convenient than getting the Axes and calling its `plot()` method. 
+
+Example: `plt.title()` = `plt.gca().set_title(s, *args, **kwargs)`. 
+- `gca()` grabs the current axis and returns it. 
+- `set_title()` is a setter method that sets the title for that Axes object.
+
+### Subplots
+[plt.subplots()](https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.subplots.html) allows to do more complex
+ plots by using different `Axes` [methods](https://matplotlib.org/api/axes_api.html#id1) for each `ax`. 
+
+Typical Examples:
+- `fig, ax = plt.subplots()`
+- `fig, (ax1, ax2) = plt.subplot(nrows=1, ncols=2)`
+
+Plot Sub plots with different size:
+```
+gridsize = (3, 2)
+fig = plt.figure(figsize=(12, 8))
+ax1 = plt.subplot2grid(gridsize, (0, 0), colspan=2, rowspan=2)
+ax2 = plt.subplot2grid(gridsize, (2, 0))
+ax3 = plt.subplot2grid(gridsize, (2, 1))
+```
