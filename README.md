@@ -1,5 +1,10 @@
 # Data Science Cheat Sheet
 
+## Useful Links
+- [OVER 100 Data Scientist Interview Questions and Answers!](https://towardsdatascience.com/over-100-data-scientist-interview-questions-and-answers-c5a66186769a)
+- [DS 面试 统计类问题 学习资料总结](https://www.1point3acres.com/bbs/thread-610533-1-1.html)
+
+
 ## MySQL Cheat Sheet 
 
 Some refer links:
