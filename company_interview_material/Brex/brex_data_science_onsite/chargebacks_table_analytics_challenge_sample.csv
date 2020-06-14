@@ -1,0 +1,11 @@
+transaction_id,chargeback_id,amount,currency,reason,accrual_time
+ntx_cjqem0h7l5eqo01yhiidesxqi,ncb_cjqy4sp3q184k01y9pyi10w2u,2995,USD,fraud,1/15/19 7:09 PM
+ntx_cjql12p1j2t5l01xmslhyxdx9,ncb_cjr6o9w2ykfop0117w5s43gpj,7900,USD,fraud,1/21/19 6:36 PM
+ntx_cjqnpm5s10kwb012q7pkv79ap,ncb_cjr6oh2epkfvq01xs68l3i2o4,3770,USD,fraud,1/21/19 6:42 PM
+ntx_cjqnpm04a0l0i01071pdkwus3,ncb_cjr6oi98wkfxx012am2r0lal4,3770,USD,fraud,1/21/19 6:43 PM
+ntx_cjqnplvbf0kvz011i1m72ga2x,ncb_cjr6ok2jrkfzs01xshkjykomu,3770,USD,fraud,1/21/19 6:44 PM
+ntx_cjqnplqlz0kv5013lrkhvuc8b,ncb_cjr6op2ggkg6d012a3gt9iu0c,3770,USD,fraud,1/21/19 6:48 PM
+ntx_cjqnplhi70kut011ia54g2937,ncb_cjr6or27ukg8601zlzww6t7k1,3770,USD,fraud,1/21/19 6:50 PM
+ntx_cjqnplc9m0ktk012qwz2nrmh0,ncb_cjr6os2x3kgde0117b9z8by50,3770,USD,fraud,1/21/19 6:50 PM
+ntx_cjqnpl7jb0kxt01071062vcuu,ncb_cjr6ous6xkgeg012amqgy8lsr,3770,USD,fraud,1/21/19 6:53 PM
+ntx_cjqnpl2xm0ksv013l8iwgu2yr,ncb_cjr6owde8kgkk0117dld6ccx6,3770,USD,fraud,1/21/19 6:54 PM
